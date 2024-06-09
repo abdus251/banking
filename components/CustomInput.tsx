@@ -20,22 +20,21 @@ const CustomInput = ({ control, name, label, placeholder }: CustomInput ) => {
               name={name}
               render={({ field }) => (
                <div className='form-item'>
-                <FormItem>
                   <FormLabel className='form-label'>
                     {label}
                   </FormLabel>
-                  {/* <div className='flex w-full flex-col'></div> */}
+                  <div className="flex w-full flex-col">
                   <FormControl>
                     <Input 
-                    placeholder={placeholder}
-                    className='input-class'
-                    type='password'
-                     {...field} 
-                     />
+                      placeholder={placeholder}
+                      className='input-class'
+                      type='text'
+                      {...field} 
+                    />
                   </FormControl>
                   <FormMessage 
                   className='form-message mt-2' />
-                </FormItem>
+                </div>
                 </div>
               )}
             />
