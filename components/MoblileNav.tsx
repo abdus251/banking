@@ -30,7 +30,7 @@ const MoblileNav = ({ user}: MobileNavProps) => {
         </SheetTrigger>
           <SheetContent side={"left"} className="border-none bg-white">
           <Link href="/" className='mb-12 cursor-pointer
-        items-center gap-1 px-4'>
+          items-center gap-1 px-4'>
           <Image
             src="/icons/logo.svg" 
             width={34}
